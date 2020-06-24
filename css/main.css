@@ -11,9 +11,10 @@ body {
   --thickness: 40px;
   
 
-  --c1: #c3cecf;
+  --c1: #e04e39;
   --c2: #c3cecf;
   --c3: #c3cecf;
+  --c4: #ff9181;
 
 }
 
@@ -25,6 +26,9 @@ body {
 }
 .c3 div {
   background: var(--c3);
+}
+.c4 div {
+  background: var(--c4);
 }
 
 .rul {
@@ -41,6 +45,8 @@ body {
   height: 500px;
   margin: 0 auto;
   transform: rotate(-63deg);
+  left: -100px;
+    top: -50px;
 }
 
 .grp {
