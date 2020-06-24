@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding-top:50px;
+  text-align: center;
+}
+:root {
+  --gutter: 16px;
+  --length: 440px;
+  --thickness: 40px;
+  
+
+  --c1: #c3cecf;
+  --c2: #c3cecf;
+  --c3: #c3cecf;
+
+}
+
+.c1 div {
+  background: var(--c1);
+}
+.c2 div {
+  background: var(--c2);
+}
+.c3 div {
+  background: var(--c3);
+}
+
+.rul {
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background:black;
+}
+
+#logo-container {
+  position: relative;
+  box-sizing: border-box;
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+  transform: rotate(-63deg);
+}
+
+.grp {
+  position: absolute;
+  bottom:0;
+  left:0;
+}
+
+.grp2 {
+  bottom: 475px;
+  left: 610px;
+  transform: rotate(-180deg);
+}
+
+.trap {
+  transform: skew(-27deg);
+  height: var(--thickness);
+  position: absolute;
+}
+
+.trap1 {
+  width: var(--length);
+  width:427px;
+  bottom: 0;
+  left: 10px;
+}
+
+.trap2 {
+  width: calc( (var(--length) * 8.5 ) / 11 );
+  transform: rotate(-63deg) skew(-27deg);
+  bottom: 150px;
+  left: -61px;
+}
+
+.trap2:after, .trap5:after {
+  content:"";
+  display: block;
+  width: 40px;
+  height: 40px;
+  transform: skew(-12deg);
+  position: absolute;
+  bottom: 0px;
+  left: calc( 100% - 27px);
+  background:inherit;
+}
+
+.trap5:before {
+  content: "";
+  display: block;
+  background: #fff;
+  width: 10px;
+  height: 42px;
+  position: absolute;
+  transform: rotate(12deg);
+  margin-top: -2px;
+  margin-left: -5px;
+
+}
+
+.trap5:after {
+  left: calc( 100% - 11px);
+}
+
+
+
+.trap3 {
+  width: 355px;
+  transform: rotate(63deg) skew(-27deg);
+  bottom: 191px;
+  left: 170px;
+
+}
+
+.trap4 {
+  width: calc( (var(--length) * 8 ) / 11 );
+  transform: rotate(0deg) skew(-27deg);
+  bottom: 53.5px;
+  left: 98px;
+}
+
+.trap5 {
+  width: calc( (var(--length) * 9.5 ) / 11 );
+    transform: rotate(-63deg) skew(-27deg);
+    bottom: 175px;
+    left: -127px;
+}
+
+
