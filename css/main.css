@@ -1,22 +1,24 @@
 * {
   box-sizing: border-box;
 }
-body {
-  padding-top:50px;
-  text-align: center;
-}
 :root {
   --gutter: 16px;
   --length: 440px;
   --thickness: 40px;
   
-
+  --c0: #ffffff;
   --c1: #e04e39;
   --c2: #c3cecf;
   --c3: #c3cecf;
   --c4: #ff9181;
 
 }
+body {
+  padding-top:50px;
+  text-align: center;
+  background-color:var(--c0);
+}
+
 
 .c1 div {
   background: var(--c1);
@@ -46,7 +48,7 @@ body {
   margin: 0 auto;
   transform: rotate(-63deg);
   left: -100px;
-    top: -50px;
+  top: -50px;
 }
 
 .grp {
@@ -96,7 +98,7 @@ body {
 .trap5:before {
   content: "";
   display: block;
-  background: #fff;
+  background: var(--c0);
   width: 10px;
   height: 42px;
   position: absolute;
@@ -110,6 +112,20 @@ body {
   left: calc( 100% - 11px);
 }
 
+.shape3:after {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 203px;
+  position: absolute;
+  background: var(--c0);
+  right: 0;
+  bottom: 0;
+  margin-bottom: 267px;
+  margin-right: -185px;
+  /* border: 1px solid; */
+  transform: rotate(-27deg);
+}
 
 
 .trap3 {
